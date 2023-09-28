@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <h1 class="heading" value="A-Value">DOM Manipulation</h1>
+    <input type="number" class="input" value="23">
+    <button type="button" value="click">Click Event</button> -->
+    <div class="container">
+      <section class="card">
+        <h3 class="title">Task Title</h3>
+        <div class="sub-container">
+          <p class="description">Task Description</p>
+          <section class="side-section">
+            <p class="priority">Task Priority</p>
+            <p class="deadline">Task Deadline</p>
+          </section>
+        </div>
+        <section class="buttons">
+          <input type="radio" id="on-going" name="status" />
+          <label for="on-going">On-going </label>
+          <input type="radio" id="completed" name="status" />
+          <label for="completed">Completed! </label>
+        </section>
+      </section>
+      <button type="button" class="add-task">Add Task</button>
+      <section class="form">
+        <form>
+          <div class="class-title-parent">
+            <label for="task-title">Task:</label>
+            <input type="text" class="task-title" name="task-title" />
+          </div>
+          <div class="task-description-parent">
+            <label for="task-description">Task Description:</label>
+            <textarea
+              type="text"
+              class="task-description"
+              name="task-description"
+            ></textarea>
+          </div>
+          <section class="priority-class">
+            <input type="radio" class="priority-one" name="priority" />
+            <label for="priority-one">Top Priority</label>
+            <input type="radio" class="priority-two" name="priority" />
+            <label for="priority-two">Neutral Priority</label>
+            <input type="radio" class="priority-third" name="priority" />
+            <label for="priority-third">Least Priority</label>
+          </section>
+          <div>
+            <label for="deadline">Deadline:</label>
+            <input type="datetime-local" class="deadline" name="deadline" />
+          </div>
+          <div>
+            <button type="button" class="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
